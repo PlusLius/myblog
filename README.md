@@ -3,20 +3,24 @@
 ## 敏捷开发实践
 
 1. 明确需求，设计原型图
-   (1). 第一版先实现环境搭建，快速上线为主
+
+> 第一版先实现环境搭建，快速上线为主
+
    ![原型图](./protoImg/1.jpg)
+   
 2. 开发环境搭建
-   (1). 版本管理工具：git,
-   (2). 代码托管平台：github,
-   (3). 持续集成平台：travis,
-   (4). 代码编辑器：vscode,
-   (5). 风格检查工具：ESLint,
-   (6). 测试工具: Karma,istanbul,chai,mocha
-   (7). 开发框架(暂定): vue,vuex,vue-rout,axios,koa2
-   (8). 数据库: redis, mongoDB 
-   (9). 开发语言: javascript
-   (10). 打包工具webpack
-   (11). 语言编译工具typescript
+
+   - [x] 版本管理工具：git,
+   - [x] 代码托管平台：github,
+   - [x] 持续集成平台：travis,
+   - [x] 代码编辑器：vscode,
+   - [x] 风格检查工具：ESLint,
+   - [x] 测试工具: Karma,istanbul,chai,mocha
+   - [x] 开发框架(暂定): vue,vuex,vue-rout,axios,koa2
+   - [x] 数据库: redis, mongoDB 
+   - [x] 开发语言: javascript
+   - [x] 打包工具webpack
+   - [x] 语言编译工具typescript
 
 ## 架构设计
 
