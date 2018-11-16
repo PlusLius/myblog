@@ -1,0 +1,20 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "## 敏捷开发实践",
+  "main": "index.js",
+  "scripts": {
+    "test":"webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PlusLius/myblog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PlusLius/myblog/issues"
+  },
+  "homepage": "https://github.com/PlusLius/myblog#readme"
+}
