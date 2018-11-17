@@ -2,8 +2,7 @@ language: node_js
 node_js:
  - "node"
 script:
-  - "npm run server &"
-  - "npm run test"
+  - "npm run test:unit"
 branches:
   only:
   - gh-pages

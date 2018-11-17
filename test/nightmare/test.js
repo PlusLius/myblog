@@ -18,7 +18,7 @@ describe('test index.html',() => {
         }).catch(error => {
           console.error('Search failed:', error)
         })
-    }).timeout(5000)
+    })
     it('第二个按钮的值应该等于归类',(done)=>{
         const nightmare = Nightmare()
         nightmare
@@ -33,7 +33,7 @@ describe('test index.html',() => {
         }).catch(error => {
           console.error('Search failed:', error)
         })
-    }).timeout(5000)
+    })
     it('第三个按钮的值应该等于展示',(done)=>{
       const nightmare = Nightmare()
       nightmare
@@ -47,7 +47,7 @@ describe('test index.html',() => {
         done()
       }).catch(error => {
         console.error('Search failed:', error)
-      }).timeout(5000)
+      })
   })
 })
 

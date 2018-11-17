@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --env production --config ./build/webpack.config.js",
     "server": "webpack-dev-server --env development --config ./build/webpack.config.js --open",
-    "test": "./node_modules/.bin/mocha ./test/test.js"
+    "test:mare": "./node_modules/.bin/mocha ./test/nightmare/test.js",
+    "test:unit":"./node_modules/.bin/mocha ./test/unit/test.js"
   },
   "repository": {
     "type": "git",

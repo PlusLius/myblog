@@ -63,7 +63,6 @@ language: node_js
 node_js:
  - "node"
 script:
-  - "npm run server &"
   - "npm test"
 branches:
   only:
