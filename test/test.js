@@ -8,7 +8,7 @@ describe('test index.html',() => {
         const nightmare = Nightmare()
         nightmare
         .goto('http://localhost:8080')
-        .wait(1000)
+        // .wait('.a')
         .evaluate( () => {
             return document.querySelector('.a').textContent
           })
@@ -24,7 +24,7 @@ describe('test index.html',() => {
         const nightmare = Nightmare()
         nightmare
         .goto('http://localhost:8080')
-        .wait(1000)
+        // .wait('.b')
         .evaluate( () => {
             return document.querySelector('.b').textContent
           })
@@ -40,7 +40,7 @@ describe('test index.html',() => {
       const nightmare = Nightmare()
       nightmare
       .goto('http://localhost:8080')
-      .wait(1000)
+      // .wait('.c')
       .evaluate( () => {
           return document.querySelector('.c').textContent
         })
