@@ -17,6 +17,7 @@ describe('test index.html',() => {
           expect(text).to.equal('发布')
           done()
         }).catch(error => {
+          done()
           console.error('Search failed:', error)
         })
     })
@@ -33,6 +34,7 @@ describe('test index.html',() => {
           expect(text).to.equal('归类')
           done()
         }).catch(error => {
+          done()
           console.error('Search failed:', error)
         })
     })
@@ -49,6 +51,7 @@ describe('test index.html',() => {
         expect(text).to.equal('展示')
         done()
       }).catch(error => {
+        done()
         console.error('Search failed:', error)
       })
   })
