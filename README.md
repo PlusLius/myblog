@@ -59,10 +59,10 @@
  cnpm i -D webpack-dev-server //起服务器用来ui测试
 
 5. travis测试
-language: node_js,
+language: node_js
 node_js:,
   - "node"
-install: "npm install",  
-script: "npm run test"
+install: "npm install", 
+script: "npm test"
 ```
 
