@@ -7,7 +7,7 @@ describe('test index.html',() => {
     it('第一个按钮的值应该等于发布',(done) => {
         const nightmare = Nightmare()
         nightmare
-        .goto('http://localhost:8080')
+        .goto('http://127.0.0.1:8080')
         // .wait('.a')
         .evaluate( () => {
             return document.querySelector('.a').textContent
@@ -23,7 +23,7 @@ describe('test index.html',() => {
     it('第二个按钮的值应该等于归类',(done)=>{
         const nightmare = Nightmare()
         nightmare
-        .goto('http://localhost:8080')
+        .goto('http://127.0.0.1:8080')
         // .wait('.b')
         .evaluate( () => {
             return document.querySelector('.b').textContent
@@ -39,7 +39,7 @@ describe('test index.html',() => {
     it('第三个按钮的值应该等于展示',(done)=>{
       const nightmare = Nightmare()
       nightmare
-      .goto('http://localhost:8080')
+      .goto('http://127.0.0.1:8080')
       // .wait('.c')
       .evaluate( () => {
           return document.querySelector('.c').textContent
