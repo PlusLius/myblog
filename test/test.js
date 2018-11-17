@@ -7,8 +7,7 @@ describe('test index.html',() => {
     it('第一个按钮的值应该等于发布',(done) => {
         const nightmare = Nightmare()
         nightmare
-        .goto('http://127.0.0.1:8080')
-        .wait(5000)
+        .goto('http://localhost:8080')
         .evaluate( () => {
             return document.querySelector('.a').textContent
           })
@@ -17,15 +16,13 @@ describe('test index.html',() => {
           expect(text).to.equal('发布')
           done()
         }).catch(error => {
-          done()
           console.error('Search failed:', error)
         })
-    })
+    }).timeout(5000)
     it('第二个按钮的值应该等于归类',(done)=>{
         const nightmare = Nightmare()
         nightmare
-        .goto('http://127.0.0.1:8080')
-        .wait(5000)
+        .goto('http://localhost:8080')
         .evaluate( () => {
             return document.querySelector('.b').textContent
           })
@@ -34,15 +31,13 @@ describe('test index.html',() => {
           expect(text).to.equal('归类')
           done()
         }).catch(error => {
-          done()
           console.error('Search failed:', error)
         })
-    })
+    }).timeout(5000)
     it('第三个按钮的值应该等于展示',(done)=>{
       const nightmare = Nightmare()
       nightmare
-      .goto('http://127.0.0.1:8080')
-      .wait(5000)
+      .goto('http://localhost:8080')
       .evaluate( () => {
           return document.querySelector('.c').textContent
         })
@@ -51,9 +46,8 @@ describe('test index.html',() => {
         expect(text).to.equal('展示')
         done()
       }).catch(error => {
-        done()
         console.error('Search failed:', error)
-      })
+      }).timeout(5000)
   })
 })
 
