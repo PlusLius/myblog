@@ -4,7 +4,9 @@
   "description": "## 敏捷开发实践",
   "main": "index.js",
   "scripts": {
-    "test":"webpack --config webpack.config.js"
+    "build": "webpack --env production --config ./build/webpack.config.js",
+    "server": "webpack-dev-server --env development --config ./build/webpack.config.js --open",
+    "test": "./node_modules/.bin/mocha ./test/test.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,14 @@
   "bugs": {
     "url": "https://github.com/PlusLius/myblog/issues"
   },
-  "homepage": "https://github.com/PlusLius/myblog#readme"
+  "homepage": "https://github.com/PlusLius/myblog#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mocha": "^5.2.0",
+    "nightmare": "^3.0.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
 }
