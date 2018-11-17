@@ -60,9 +60,14 @@
 
 5. travis测试
 language: node_js
-node_js:,
-  - "node"
-install: "npm install", 
-script: "npm test"
+node_js:
+ - "node"
+script:
+  - "npm run server"
+  - "npm test"
+branches:
+  only:
+  - gh-pages
+   
 ```
 
