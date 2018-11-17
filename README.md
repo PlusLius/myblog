@@ -1,6 +1,6 @@
 # myblog
 
-[![Build Status](https://travis-ci.com/PlusLius/myblog.svg?branch=master)](https://travis-ci.com/PlusLius/myblog)
+[![Build Status](https://travis-ci.com/PlusLius/myblog.svg?branch=gh-pages)](https://travis-ci.com/PlusLius/myblog)
 
 ## 敏捷开发实践
 
