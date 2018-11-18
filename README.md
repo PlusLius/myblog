@@ -90,7 +90,7 @@ branches:
 ## 技术选型
  - [x] 开发语言： Node
  - [x] 后台开发框架： Koa
- - [x] 数据存储：MongoDN
+ - [x] 数据存储：MongoDB
  - [x] Session存储：Redis
  - [x] 页面模版：vue
 
