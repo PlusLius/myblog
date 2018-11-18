@@ -67,6 +67,44 @@ script:
 branches:
   only:
   - gh-pages
+
    
 ```
 
+## 第2版需求
+
+> 对博客添加分类功能
+
+！[原型图](./protoImg/2.png)
+
+1. 明确需求
+   - [ ] 完成分类功能前后台数据交互
+
+2. 需要解决的问题
+   - [ ] 静态文件服务
+   - [ ] 路由设计
+   - [ ] 数据存储
+   - [ ] 页面渲染(使用服务端渲染)
+
+
+## 技术选型
+ - [x] 开发语言： Node
+ - [x] 后台开发框架： Koa
+ - [x] 数据存储：MongoDN
+ - [x] Session存储：Redis
+ - [x] 页面模版：vue
+
+## 路由设计
+
+```
+/ 默认根目录
+/blogList 获取全部博客列表
+/kind/:kindName 获取某个分类下的博客列表
+/kindList 获取分类列表
+/blog/:blogId 根据id获取博客内容
+/modify/blog/:blogId/:kindName 修改一篇博客的分类
+/modify/kind/:kindName 修改分类的名称
+/new/kind/:kindName 新增分类
+/delete/blog/:blogId 删除一篇博客
+/delete/kind/:kindName 删除一个分类
+```
